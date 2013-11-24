@@ -1,0 +1,22 @@
+; .editorconfig
+
+root = true
+
+[**.js]
+bin=node
+indent_style = space
+indent_size = 2 
+max_line_length = 80
+trim_trailing_whitespace = true 
+space_before_conditional = true 
+brace_style = collapse 
+
+[**.css]
+indent_style = space
+indent_size = 2 
+
+[**.html]
+indent_style = space
+indent_size = 2 
+max_char = 78
+

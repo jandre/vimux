@@ -102,4 +102,7 @@
 	url = https://github.com/mephux/snipmate-snippets.git
 [submodule "/Users/mephux/Source/shell/vimux/vim/bundle/nerdtree"]
 	path = /Users/mephux/Source/shell/vimux/vim/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
+  url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/vim-jsbeautify"]
+	path = vim/bundle/vim-jsbeautify
+	url = git@github.com:maksimr/vim-jsbeautify.git

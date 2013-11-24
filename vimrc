@@ -28,10 +28,16 @@ set synmaxcol=2048                " Syntax coloring lines that are too
 
 set viminfo='20,\"80              " read/write a .viminfo file, don't store more
 
-colorscheme threatstack
-set term=xterm
+set term=xterm-256color
 set t_Co=256                      " 256 colors
 let &t_Co=256
+
+"set background=light
+"let g:solarized_termtrans = 1
+"let g:solarized_termcolors=256
+"colors mayansmoke 
+set background=dark
+colorscheme threatstack
 
 " Show syntax highlighting groups for word under cursor
 nmap <Leader>s :call <SID>SynStack()<CR>
@@ -561,4 +567,7 @@ let g:smartusline_hi_replace = 'guibg=#e454ba guifg=black ctermbg=magenta ctermf
 let g:smartusline_hi_insert = 'guibg=orange guifg=black ctermbg=119 ctermfg=black'
 let g:smartusline_hi_virtual_replace = 'guibg=#e454ba guifg=black ctermbg=magenta ctermfg=black'
 let g:smartusline_hi_normal = 'guibg=#95e454 guifg=black ctermbg=108 ctermfg=black'
+
+autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+
 
